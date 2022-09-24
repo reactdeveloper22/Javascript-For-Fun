@@ -1,34 +1,97 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#  F u n J a v a S c r i p t
 
-## Getting Started
+<a href="https://funjavascript-9elj.vercel.app" target="_blank">![](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)</a>
+![](https://img.shields.io/badge/Maintained-Yes-indigo)
+![](https://img.shields.io/github/forks/SashenJayathilaka/Javascript-For-Fun.svg)
+![](https://img.shields.io/github/stars/SashenJayathilaka/Javascript-For-Fun.svg)
+![](https://img.shields.io/github/issues/SashenJayathilaka/Javascript-For-Fun)
+![](https://img.shields.io/github/last-commit/SashenJayathilaka/Javascript-For-Fun)
 
-First, run the development server:
+<div align="center">
+<a href="https://funjavascript-9elj.vercel.app"><img width='800rem' src='https://user-images.githubusercontent.com/99184393/192088893-10278e39-8371-4ead-9ec5-e669dbf841c0.gif' alt='image'/></a>
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## <a href="https://funjavascript-9elj.vercel.app" target="_blank">LIVE DEMO 💥</a>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
+![forthebadge](https://forthebadge.com/images/badges/for-you.svg)
+![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### :space_invader: Tech Stack
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://#/">Typescript</a></li>
+    <li><a href="https://nextjs.org/">Next.js</a></li>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://#/">Tailwind Css</a></li>
+  </ul>
+</details>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<details>
+  <summary>Mario Game</summary>
+  <ul>
+    <li><a href="https://#/">Javascript</a></li>
+    <li><a href="https://nextjs.org/">Next.js</a></li>
+  </ul>
+</details>
 
-## Learn More
+<br />
 
-To learn more about Next.js, take a look at the following resources:
+<table>
+    <tr>
+        <td>
+<a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="" width="30" height="30" /></a>
+        </td>
+                        <td>
+<a href="#"><img src="https://user-images.githubusercontent.com/99184393/183096870-fdf58e59-d78c-44f4-bd1c-f9033c16d907.png" alt="Google" width="30" height="30" /></a>
+        </td>
+                              <td>
+<a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="Google" width="30" height="30" /></a>
+        </td>
+                        <td>
+<a href="#"><img src="https://user-images.githubusercontent.com/99184393/180462270-ea4a249c-627c-4479-9431-5c3fd25454c4.png" alt="" width="30" height="30" /></a>
+        </td>
+                              <td>
+<a href="#"><img src="https://user-images.githubusercontent.com/99184393/179383376-874f547c-4e6f-4826-850e-706b009e7e2b.png" alt="" width="30" height="30" /></a>
+        </td>
+    </tr>
+</table>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## :running: Mario Game
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<div>
+<a href="https://funjavascript-9elj.vercel.app"><img width='400px' src='https://user-images.githubusercontent.com/99184393/192089453-248fd955-dd39-4b42-bd46-a96b3f3846ac.gif' alt='image'/></a>
+</div>
 
-## Deploy on Vercel
+## 	:toolbox: Getting Started
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### :bangbang:  Prerequisites
+- Install Node JS in your computer <a href='https://nodejs.org/en/'>HERE</a>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### :test_tube: Canvas Boilerplate
+
+1.  Clone the repo:
+
+        git clone https://github.com/christopher4lis/canvas-boilerplate.git
+
+2.  Install dependencies:
+
+        yarn
+
+    or
+
+        npm install
+
+3.  Run webpack:
+
+        npm start
+
+Your canvas piece should open up automatically at http://localhost:3000 and you should see 'HTML CANVAS BOILERPLATE' on hover.
+
+## :handshake: Contact
+
+Sashen - [@twitter_handle](https://twitter.com/SashenHasinduJ) - sashenjayathilaka95@gmail.com
+
+Project Link: [https://github.com/SashenJayathilaka/Javascript-For-Fun.git](https://github.com/SashenJayathilaka/Javascript-For-Fun.git)
