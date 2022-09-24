@@ -13,10 +13,6 @@ const Header: React.FC<HeaderProps> = () => {
 
   return (
     <div>
-      <div className="ocean">
-        <div className="wave"></div>
-        <div className="wave"></div>
-      </div>
       <div className="max-w-7xl mx-auto flex-col min-h-screen py-20 px-10 2xl:px-0">
         <div className="">
           <div className="flex justify-center text-9xl font-semibold z-50">
@@ -24,11 +20,11 @@ const Header: React.FC<HeaderProps> = () => {
               <h1>JavaScript For</h1>
             </div>
           </div>
-          <div className="flex justify-center text-7xl mt-4 text-gray-600 font-mono z-50">
+          <div className="flex justify-center text-7xl mt-4 text-gray-600 font-mono">
             <h3>{text}</h3>
             <Cursor cursorColor="#F7AB0A" />
           </div>
-          <div className="flex justify-center mt-10">
+          <div className="flex justify-center mt-10 -ml-5">
             <button
               type="button"
               data-mdb-ripple="true"
@@ -50,12 +46,6 @@ const Header: React.FC<HeaderProps> = () => {
               style={{ width: "130px" }}
               className="z-50"
             />
-            {/*             <img
-              style={{ width: "130px" }}
-              className="z-50"
-              src="https://pngimg.com/uploads/mario/mario_PNG60.png"
-              alt=""
-            /> */}
           </div>
         </div>
         <div className="flex justify-end space-x-8 -mt-40">
@@ -70,12 +60,6 @@ const Header: React.FC<HeaderProps> = () => {
             style={{ width: "130px" }}
             className="z-50"
           />
-          {/*           <img
-            style={{ width: "130px" }}
-            className="z-50"
-            src="https://www.freepnglogos.com/uploads/mario-png/mario-png-super-smash-bros-full-roster-leak-wiiu-10.png"
-            alt=""
-          /> */}
         </div>
       </div>
     </div>

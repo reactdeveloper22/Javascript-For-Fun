@@ -48,6 +48,12 @@ const Home = ({ searchResults }: Props) => {
         />
       </Head>
       <Header />
+      <section className="pattern">
+        <img
+          className="outline-none"
+          src="https://cdn.kcak11.com/codepen_assets/wave_animation/wave.svg"
+        />
+      </section>
       <Card />
       <AdSide />
       <ProjectIdeas />
