@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 type Props = {
-  image: string;
+  image: any;
   name: string;
   isTrue: boolean;
 };
