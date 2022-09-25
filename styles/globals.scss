@@ -1,19 +1,10 @@
-$color_1: #9ca0b1;
-$color_2: #fff;
-$color_3: transparent;
-$color_4: white;
-$font-family_1: "Josefin Sans", sans-serif;
-$font-family_2: "Source Sans Pro", sans-serif;
+$color_1: transparent;
+$color_2: white;
+$font-family_1: "Source Sans Pro", sans-serif;
 $background-color_1: #17141d;
 $background-color_2: #2e3033;
 $border-color_1: #0051f4;
 
-/*  */
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
 /* wapper 2*/
 @-webkit-keyframes reveal {
   80% {
@@ -80,44 +71,14 @@ body {
   overflow: auto;
   overflow-x: hidden;
 }
-a {
-  text-decoration: none;
-  color: $color_1;
-}
-.wrapper {
-  text-align: center;
-  h1 {
-    color: $color_2;
-    font-size: 92px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-family: $font-family_1;
-    background: linear-gradient(
-      to right,
-      #095fab 10%,
-      #25abe8 50%,
-      #57d75b 60%
-    );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: $color_2;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 1.5s linear infinite;
-    display: inline-block;
-  }
-}
 .thankyou {
   background: 50% 100%/50% 50% no-repeat
     radial-gradient(ellipse at bottom, #fff, transparent, transparent);
   -webkit-background-clip: text;
   background-clip: text;
-  color: $color_3;
+  color: $color_1;
   font-size: 5vw;
-  font-family: $font-family_2;
+  font-family: $font-family_1;
   -webkit-animation: reveal 3000ms ease-in-out forwards 200ms,
     glow 2500ms linear infinite 2000ms;
   animation: reveal 3000ms ease-in-out forwards 200ms,
@@ -166,7 +127,7 @@ a {
   }
 }
 .title {
-  color: $color_4;
+  color: $color_2;
   font-weight: 600;
   font-size: 1.4rem;
   position: absolute;

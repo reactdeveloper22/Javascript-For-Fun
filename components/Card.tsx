@@ -12,7 +12,7 @@ const cardData = [
     color: "bg-pink-100",
     name: "Mario Game",
     description: "Mario Game with JavaScript and HTML Canvas",
-    Link: "https://airbnb-build-two.vercel.app",
+    Link: "https://iridescent-crepe-c05125.netlify.app",
   },
   {
     image:
@@ -20,7 +20,7 @@ const cardData = [
     color: "bg-yellow-100",
     name: "Rock paper scissors",
     description: "Rock paper scissors with JavaScript and HTML Css",
-    Link: "https://airbnb-build-two.vercel.app",
+    Link: "#",
   },
   {
     image:
@@ -28,7 +28,7 @@ const cardData = [
     color: "bg-pink-200",
     name: "Memory Games",
     description: "Memory Games with JavaScript and HTML Css",
-    Link: "https://airbnb-build-two.vercel.app",
+    Link: "#",
   },
   {
     image:
@@ -36,7 +36,7 @@ const cardData = [
     color: "bg-blue-200",
     name: "Blackjack Game",
     description: "Blackjack Gamewith JavaScript and HTML Css",
-    Link: "https://airbnb-build-two.vercel.app",
+    Link: "#",
   },
   {
     image:
@@ -44,14 +44,14 @@ const cardData = [
     color: "bg-gray-200",
     name: "Snake",
     description: "Snake Game with JavaScript and HTML Css",
-    Link: "https://airbnb-build-two.vercel.app",
+    Link: "#",
   },
   {
     image: "https://art.pixilart.com/1bede42162fd121.png",
     color: "bg-orange-100",
     name: "Space Invaders",
     description: "Space Invaders with JavaScript and HTML Css",
-    Link: "https://airbnb-build-two.vercel.app",
+    Link: "#",
   },
 ];
 

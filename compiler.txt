@@ -9,41 +9,6 @@ body {
   overflow-x: hidden;
 }
 
-/*  */
-
-a {
-  text-decoration: none;
-  color: #9ca0b1;
-}
-
-.wrapper {
-  text-align: center;
-}
-.wrapper h1 {
-  color: #fff;
-  font-size: 92px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-family: "Josefin Sans", sans-serif;
-  background: linear-gradient(to right, #095fab 10%, #25abe8 50%, #57d75b 60%);
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 1.5s linear infinite;
-  display: inline-block;
-}
-
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
-
 /* wapper 2*/
 .thankyou {
   background: 50% 100%/50% 50% no-repeat
