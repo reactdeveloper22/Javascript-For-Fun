@@ -16,17 +16,20 @@ const frameworksData = [
     isTrue: true,
   },
   {
-    image: "https://dkny.oss-cn-hangzhou.aliyuncs.com/1/icons/vue.svg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png",
     name: "vue Js",
     isTrue: true,
   },
   {
-    image: "https://dkny.oss-cn-hangzhou.aliyuncs.com/1/icons/angular.svg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png",
     name: "Angular",
     isTrue: false,
   },
   {
-    image: "https://dkny.oss-cn-hangzhou.aliyuncs.com/1/icons/svelte.svg",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/6/6e/Svelte_logo_by_gengns.svg",
     name: "svelte",
     isTrue: false,
   },
