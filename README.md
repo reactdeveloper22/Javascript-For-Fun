@@ -7,8 +7,9 @@
 ![](https://img.shields.io/github/issues/SashenJayathilaka/Javascript-For-Fun)
 ![](https://img.shields.io/github/last-commit/SashenJayathilaka/Javascript-For-Fun)
 
+
 <div align="center">
-<a href="https://funjavascript-9elj.vercel.app"><img width='800rem' src='https://user-images.githubusercontent.com/99184393/192088893-10278e39-8371-4ead-9ec5-e669dbf841c0.gif' alt='image'/></a>
+<a href="https://funjavascript-9elj.vercel.app"><img width='800rem' src='https://user-images.githubusercontent.com/99184393/192123572-2eb07d50-1a1e-4382-8dbc-b00c3a07ebc1.png' alt='image'/></a>
 </div>
 
 ## <a href="https://funjavascript-9elj.vercel.app" target="_blank">LIVE DEMO 💥</a>
