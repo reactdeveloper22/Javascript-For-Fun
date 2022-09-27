@@ -7,6 +7,7 @@ import Frameworks from "../components/Frameworks";
 import ProjectIdeas from "../components/ProjectIdeas";
 import ReactCard from "../components/ReactCard";
 import ThankyouCard from "../components/ThankyouCard";
+import Contact from "../components/Contact";
 
 const frameworksData = [
   {
@@ -73,6 +74,10 @@ const Home = ({ searchResults }: Props) => {
       </section>
       <ReactCard searchResults={searchResults} />
       <ThankyouCard />
+      <section className="bg-[#015871] pb-10">
+        <Contact />
+      </section>
+      <hr />
       <Footer />
     </div>
   );

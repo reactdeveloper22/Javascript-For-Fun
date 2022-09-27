@@ -45,12 +45,18 @@ function Footer() {
             </h2>
             <ul className="text-gray-600 dark:text-gray-400">
               <li className="mb-4">
-                <a href="#" className="hover:underline ">
+                <a
+                  href="https://github.com/SashenJayathilaka"
+                  className="hover:underline "
+                >
                   Github
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a
+                  href="https://www.linkedin.com/in/sashen-jayathilaka-9a7170231"
+                  className="hover:underline"
+                >
                   LinkedIn
                 </a>
               </li>
@@ -79,7 +85,7 @@ function Footer() {
       <div className="sm:flex sm:items-center sm:justify-between">
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2022{" "}
-          <a href="" className="hover:underline">
+          <a href="https://sashenhasinduj.web.app/" className="hover:underline">
             sashen™
           </a>
           . All Rights Reserved.
@@ -104,7 +110,7 @@ function Footer() {
             <span className="sr-only">Facebook page</span>
           </a>
           <a
-            href="#"
+            href=""
             className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
           >
             <svg
@@ -122,7 +128,7 @@ function Footer() {
             <span className="sr-only">Instagram page</span>
           </a>
           <a
-            href="#"
+            href="https://twitter.com/SashenHasinduJ"
             className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
           >
             <svg
@@ -136,7 +142,7 @@ function Footer() {
             <span className="sr-only">Twitter page</span>
           </a>
           <a
-            href="#"
+            href="https://github.com/SashenJayathilaka"
             className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
           >
             <svg
@@ -154,7 +160,7 @@ function Footer() {
             <span className="sr-only">GitHub account</span>
           </a>
           <a
-            href="#"
+            href="https://sashenhasinduj.web.app"
             className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
           >
             <svg

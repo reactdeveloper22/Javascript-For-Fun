@@ -2,6 +2,7 @@ import React from "react";
 import DirectionsRunIcon from "@material-ui/icons/DirectionsRun";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import toast, { Toaster } from "react-hot-toast";
 
 type CardProps = {};
 
@@ -58,6 +59,20 @@ const cardData = [
 const Card: React.FC<CardProps> = () => {
   //key={index}
 
+  const handleTostOpen = () => {
+    toast.error("Sorry! Game is Currently Not Available", {
+      duration: 3000,
+      style: {
+        background: "#fff",
+        color: "#015871",
+        fontWeight: "bolder",
+        fontSize: "17px",
+        padding: "20px",
+        textAlign: "center",
+      },
+    });
+  };
+
   return (
     <div className="bg-[#015871] pb-20">
       <div className="flex space-x-8 justify-center mb-20 font-bold text-6xl text-[#fffeea] animate-bounce">
@@ -98,14 +113,24 @@ const Card: React.FC<CardProps> = () => {
                   <p className="text-gray-700 text-base mb-4 mt-2">
                     {data.description}
                   </p>
-                  <Link href={data.Link}>
+                  {data.Link === "#" ? (
                     <button
+                      onClick={handleTostOpen}
                       type="button"
                       className="inline-block px-6 py-2.5 text-xs text-teal-50 font-bold leading-tight uppercase rounded shadow-md focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 hover:animate-bounce"
                     >
                       Play
                     </button>
-                  </Link>
+                  ) : (
+                    <Link href={data.Link}>
+                      <button
+                        type="button"
+                        className="inline-block px-6 py-2.5 text-xs text-teal-50 font-bold leading-tight uppercase rounded shadow-md focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 hover:animate-bounce"
+                      >
+                        Play
+                      </button>
+                    </Link>
+                  )}
                 </div>
                 <div className="py-3 px-6 border-t border-gray-300 text-gray-600">
                   F u n J a v a S c r i p t <br /> PROJECTS

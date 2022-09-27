@@ -14,7 +14,7 @@ export default function ProjectIdeas({}: Props) {
         {Project.map((data, index) => (
           <div
             key={index}
-            className="flex w-80 h-auto bg-transparent rounded-md text-white font-semibold hover:animate-pulse cursor-pointer  hover:border border-sky-500"
+            className="hover:shadow-2xl flex w-80 h-auto bg-transparent rounded-md text-white font-semibold hover:animate-pulse cursor-pointer"
           >
             <p className="ml-4 mt-4 mb-4">⚫</p>
             <p className="ml-2 mt-4 mb-4">{data.name}</p>

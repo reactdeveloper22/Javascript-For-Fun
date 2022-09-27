@@ -62,7 +62,7 @@ const OpenCard = ({ searchResults }: Props) => {
                         whileTap={{ scale: 0.9 }}
                       >
                         <img
-                          className="w-40 h-auto rounded-md mt-5 mb-5"
+                          className="w-40 h-40 rounded-md mt-5 mb-5"
                           src={item.image}
                           alt={item.name}
                         />
@@ -73,10 +73,10 @@ const OpenCard = ({ searchResults }: Props) => {
                     <h3>{item.name}</h3>
                   </div>
                   {item.live === "#" ? (
-                    <div className="flex justify-center">
+                    <div className="flex justify-center m-5">
                       <button
                         type="button"
-                        className="inline-block cursor-not-allowed px-6 py-2 border-none text-red-400 font-semibold text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                        className="cursor-not-allowed inline-block px-6 py-2.5 bg-transparent text-red-500 font-medium text-xs leading-tight uppercase rounded-md shadow-md  hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
                       >
                         Live Demo Not Available
                       </button>
@@ -95,10 +95,10 @@ const OpenCard = ({ searchResults }: Props) => {
                   )}
 
                   <Link href={item.github}>
-                    <div className="flex justify-center ">
+                    <div className="flex justify-center pb-2">
                       <button
                         type="button"
-                        className="inline-block px-6 py-2 border-none text-blue-400 font-semibold text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                        className="inline-block px-6 py-2  text-blue-400 font-semibold text-xs leading-tight uppercase rounded-md hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
                       >
                         Source Code
                       </button>
