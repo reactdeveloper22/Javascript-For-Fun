@@ -5,6 +5,8 @@ import Modal from "@mui/material/Modal";
 import Typography from "@mui/material/Typography";
 import React, { useState } from "react";
 import images from "../data/breakfast";
+import toast, { Toaster } from "react-hot-toast";
+import Slider from "@mui/material/Slider";
 
 const style = {
   position: "absolute",
@@ -39,8 +41,31 @@ function Breakfast({ value }) {
     }
     setTimeout(() => {
       setIsShow(true);
+      toast.success("Choice Ready", {
+        duration: 8000,
+        position: "bottom-right",
+        style: {
+          background: "#fff",
+          color: "#015871",
+          fontWeight: "bolder",
+          fontSize: "17px",
+          padding: "20px",
+        },
+      });
       handleOpen();
     }, 7000);
+
+    toast.loading("Waiting...", {
+      duration: 7000,
+      position: "bottom-right",
+      style: {
+        background: "#fff",
+        color: "#015871",
+        fontWeight: "bolder",
+        fontSize: "17px",
+        padding: "20px",
+      },
+    });
   };
 
   const pickRandomItem = () => {
@@ -64,6 +89,7 @@ function Breakfast({ value }) {
   return (
     <>
       <section className="overflow-hidden text-gray-700">
+        <Toaster />
         <div className="container px-5 py-2 mx-auto lg:pt-12 lg:px-32 shadow-2xl mb-8 mt-5">
           <div className="flex justify-center animate-bounce text-5xl font-bold mt-2 mb-5 ">
             <h1>{value}</h1>
@@ -140,6 +166,18 @@ function Breakfast({ value }) {
               </button>
             )}
           </div>
+          <Box sx={{ width: 300 }}>
+            <Slider
+              aria-label="Temperature"
+              defaultValue={30}
+              /* getAriaValueText={valuetext} */
+              valueLabelDisplay="auto"
+              step={10}
+              marks
+              min={10}
+              max={110}
+            />
+          </Box>
         </div>
       </section>
       <div>
