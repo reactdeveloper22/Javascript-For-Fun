@@ -4,8 +4,8 @@ import Breakfast from "./components/Breakfast";
 import Button from "./components/Button";
 import Dinner from "./components/Dinner";
 import Lunch from "./components/Lunch";
-import Footer from "./Footer";
-import Header from "./Header";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
   const [value, setValue] = useState("Breakfast");
