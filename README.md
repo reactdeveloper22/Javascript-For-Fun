@@ -2,10 +2,10 @@
 
 <a href="https://funjavascript-9elj.vercel.app" target="_blank">![](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)</a>
 ![](https://img.shields.io/badge/Maintained-Yes-indigo)
-![](https://img.shields.io/github/forks/SashenJayathilaka/Javascript-For-Fun.svg)
-![](https://img.shields.io/github/stars/SashenJayathilaka/Javascript-For-Fun.svg)
-![](https://img.shields.io/github/issues/SashenJayathilaka/Javascript-For-Fun)
-![](https://img.shields.io/github/last-commit/SashenJayathilaka/Javascript-For-Fun)
+![](https://img.shields.io/github/forks/SashenJayathilaka/Unique-Project-Ideas.svg)
+![](https://img.shields.io/github/stars/SashenJayathilaka/Unique-Project-Ideas.svg)
+![](https://img.shields.io/github/issues/SashenJayathilaka/Unique-Project-Ideas)
+![](https://img.shields.io/github/last-commit/SashenJayathilaka/Unique-Project-Ideas)
 
 <div align="center">
 <a href="https://funjavascript-9elj.vercel.app"><img width='800rem' src='https://user-images.githubusercontent.com/99184393/193486630-71eb2665-eab4-4158-8941-96fc26e24e66.png' alt='image'/></a>
