@@ -1,12 +1,14 @@
+/* eslint-disable no-use-before-define */
 /* eslint-disable react-hooks/exhaustive-deps */
 import LoopIcon from "@mui/icons-material/Loop";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Typography from "@mui/material/Typography";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import images from "../data/breakfast";
 import toast, { Toaster } from "react-hot-toast";
 import Slider from "@mui/material/Slider";
+import AddItems from "./AddItems";
 
 const style = {
   position: "absolute",
@@ -26,7 +28,6 @@ const storeToStorage = items => {
 }; */
 
 function Breakfast({ value }) {
-  const [items] = useState(images);
   const [inputValue, setInputValue] = useState("");
   const [randomItems, setRandomItems] = useState("");
   const [isShow, setIsShow] = useState(true);
@@ -34,9 +35,13 @@ function Breakfast({ value }) {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const [description, setDescription] = useState("");
+  const [valueless, setValueless] = useState("");
+  const [boxOpen, setBoxOpen] = useState(false);
+  const [newItems, setNewItems] = useState([]);
+  const [items, setItems] = useState([]);
 
   const randomized = () => {
-    for (let i = 0; i < 60; i++) {
+    for (let i = 0; i < valueless; i++) {
       setTimeout(pickRandomItem, 100 * i + 100);
     }
     setTimeout(() => {
@@ -53,10 +58,10 @@ function Breakfast({ value }) {
         },
       });
       handleOpen();
-    }, 7000);
+    }, valueless * 100 + 200);
 
     toast.loading("Waiting...", {
-      duration: 7000,
+      duration: valueless * 100 + 200,
       position: "bottom-right",
       style: {
         background: "#fff",
@@ -70,6 +75,7 @@ function Breakfast({ value }) {
 
   const pickRandomItem = () => {
     setIsShow(false);
+    setBoxOpen(false);
     const randomItem = items[Math.floor(Math.random() * items.length)];
 
     if (items) {
@@ -79,26 +85,27 @@ function Breakfast({ value }) {
     }
   };
 
-  /*   useEffect(() => {
-    setTimeout(() => {
-      setIsShow(true);
-      handleOpen()
-    }, 8000);
-  }, []); */
+  useEffect(() => {
+    if (newItems.length >= 2) {
+      setItems(newItems);
+    } else {
+      setItems(images);
+    }
+  }, [newItems]);
 
   return (
     <>
       <section className="overflow-hidden text-gray-700">
         <Toaster />
         <div className="container px-5 py-2 mx-auto lg:pt-12 lg:px-32 shadow-2xl mb-8 mt-5">
-          <div className="flex justify-center animate-bounce text-5xl font-bold mt-2 mb-5 ">
+          <div className="flex justify-center text-5xl font-bold mt-2 mb-5 ">
             <h1>{value}</h1>
           </div>
           <div className="grid grid-cols-5 gap-2 items-center">
             {items.map((item, index) => (
-              <>
+              <div key={item.id}>
                 {item.image === randomItems ? (
-                  <div className="items" key={index}>
+                  <div className={`items ${isShow && `animate-bounce`}`}>
                     <img
                       src={item.image}
                       alt="kitty"
@@ -113,7 +120,7 @@ function Breakfast({ value }) {
                     </div>
                   </div>
                 ) : (
-                  <div className="item" key={index}>
+                  <div className="item">
                     <img
                       src={item.image}
                       alt="kitty"
@@ -128,26 +135,28 @@ function Breakfast({ value }) {
                     </div>
                   </div>
                 )}
-              </>
-
-              /*              <div className="flex flex-wrap w-auto" key={index}>
-                <div className="w-full p-1 md:p-2">
-                  <img
-                    alt="gallery"
-                    className={`block object-cover object-center w-56 h-52 rounded-lg hover:scale-110 transition duration-300 ease-in-out${
-                      item.image === randomItems
-                        ? "border-8 border-red-500 rounded-lg shadow-2xl"
-                        : ""
-                    }`}
-                    src={item.image}
-                  />
-                  <div className="flex justify-center">
-                    <p className="text-2xl font-semibold">{item.name}</p>
-                  </div>
-                </div>
-              </div> */
+              </div>
             ))}
           </div>
+          {isShow && (
+            <div className="absolute px-5 py-3 m-5">
+              <p className="absolute text-gray-500 font-medium">
+                Select your own Choosing Time
+              </p>
+              <Box sx={{ width: 300 }} className="mt-8">
+                <Slider
+                  aria-label="Temperature"
+                  defaultValue={60}
+                  getAriaValueText={setValueless}
+                  valueLabelDisplay="auto"
+                  step={10}
+                  marks
+                  min={10}
+                  max={110}
+                />
+              </Box>
+            </div>
+          )}
           <div className="flex justify-center">
             {isShow ? (
               <button
@@ -166,18 +175,30 @@ function Breakfast({ value }) {
               </button>
             )}
           </div>
-          <Box sx={{ width: 300 }}>
-            <Slider
-              aria-label="Temperature"
-              defaultValue={30}
-              /* getAriaValueText={valuetext} */
-              valueLabelDisplay="auto"
-              step={10}
-              marks
-              min={10}
-              max={110}
-            />
-          </Box>
+          {isShow && (
+            <div className="flex justify-end -mt-36">
+              {boxOpen ? (
+                <button
+                  onClick={() => setBoxOpen(false)}
+                  className="bg-green-500 w-44 text-center hover:bg-green-700 text-white py-2 rounded-md px-4 mt-10 text-xl mb-10 cursor-pointer"
+                >
+                  Add Your Own Items
+                </button>
+              ) : (
+                <button
+                  onClick={() => setBoxOpen(true)}
+                  className="bg-green-500 w-44 text-center hover:bg-green-700 text-white py-2 rounded-md px-4 mt-10 text-xl mb-10 cursor-pointer"
+                >
+                  Add Your Own Items
+                </button>
+              )}
+            </div>
+          )}
+          {boxOpen && (
+            <div className="flex justify-center">
+              <AddItems setNewItems={setNewItems} newItems={newItems} />
+            </div>
+          )}
         </div>
       </section>
       <div>
@@ -221,7 +242,7 @@ function Breakfast({ value }) {
               <button
                 onClick={handleClose}
                 type="button"
-                class="inline-block px-6 py-2 border-2 border-red-600 text-red-600 font-medium text-xs leading-tight uppercase rounded-md hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                className="inline-block px-6 py-2 border-2 border-red-600 text-red-600 font-medium text-xs leading-tight uppercase rounded-md hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
               >
                 Close
               </button>
